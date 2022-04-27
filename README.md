@@ -9,9 +9,9 @@ Región de O'Higgins
 ## Medios de prensa de la región de O'Higgins
 
 
-*El Tipografo Rancagua
+* El Tipografo Rancagua
 
-*Red O'Higgins
+* Red O'Higgins
 
 *El Rancahuaso
 *El Rancaguino
