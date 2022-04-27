@@ -10,7 +10,6 @@ Región de O'Higgins
 
 
 * El Tipografo Rancagua
-
 * Red O'Higgins
 
 *El Rancahuaso
