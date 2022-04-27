@@ -1,8 +1,11 @@
 # Proyecto-BD-2022
+Región de O'Higgins
 
+Luis Llanca
+Nayeli Cayul
+Isidora Hernández
 
-
-# Medios de prensa de la region de Ohiggins
+# Medios de prensa de la región de O'Higgins
 El Tipografo Rancagua
 Red O'Higgins
 El Rancahuaso
