@@ -29,8 +29,8 @@ cur.execute("CREATE TABLE propietario (id INT NOT NULL AUTO_INCREMENT, nombre VA
 # TABLA PERSONAS
 cur.execute("CREATE TABLE personas (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(255), wiki BOOL, profesion VARCHAR(255), nacimiento DATE, nacionalidad VARCHAR(255), popularidad INT(255), PRIMARY KEY(id))")
 # TABLA POSEER
-cur.execute("CREATE TABLE poseer (id INT NOT NULL AUTO_INCREMENT, fecha DATE, id_medios INT, FOREIGN KEY (id_medios) REFERENCES medios(id), id_propietario INT, FOREIGN KEY (id_propietario) REFERENCES propietario(id), PRIMARY KEY(id))")
+cur.execute("CREATE TABLE poseer (fecha DATE, id_medios INT NOT NULL, FOREIGN KEY (id_medios) REFERENCES medios(id), id_propietario INT NOT NULL, FOREIGN KEY (id_propietario) REFERENCES propietario(id), PRIMARY KEY(id_medios, id_propietario))")
 # TABLA MENCIONAR
-cur.execute("CREATE TABLE mencionar (id INT NOT NULL AUTO_INCREMENT, id_noticias INT, FOREIGN KEY (id_noticias) REFERENCES noticias(id), id_medios INT, FOREIGN KEY (id_medios) REFERENCES medios(id), PRIMARY KEY(id))")
+cur.execute("CREATE TABLE mencionar (id_noticias INT NOT NULL, FOREIGN KEY (id_noticias) REFERENCES noticias(id), id_medios INT NOT NULL, FOREIGN KEY (id_medios) REFERENCES medios(id), PRIMARY KEY(id_noticias, id_medios))")
 
 conn.close()
