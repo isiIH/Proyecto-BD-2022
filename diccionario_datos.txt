@@ -1,0 +1,35 @@
+Datos, Tipo de dato, Ejemplo
+Región Origen, int, 6
+Medio, string, "El Tipografo Rancagua"
+Regional/Local, char[1], R
+
+nombre_medio, string, "
+fecha_creacion_medio, date(date(YYYY-MM), 2022-04
+url_medio, string, "
+region_origen, int, 6
+pais, string, "Chile"
+idioma_principal, string, "espanol"
+
+nombre_dueño, string, "
+
+
+url_noticia, string, "
+titulo, string, "
+fecha_publicacion, date(YYYY-MM-DD), 2022-04-27
+contenido, string, ""
+
+
+
+
+
+
+url website, string, "https://www.facebook.com/eltipografo/"
+papel/digital, string, "https://eltipografo.cl/edicion-digital/2147/"
+Twitter, string, "@eltipografo"
+Facebook, string, "https://www.facebook.com/eltipografo/"
+Nac/Loc/HLoc, char[1], L
+Seguido desde, date(YYYY-MM), Febrero-2016
+Comuna Origen, string, "Rancagua"
+Propiedad Legal, string, "El Tipógrafo SPA"
+Personero-Propiedad, string,        
+Origen medial, string, "
