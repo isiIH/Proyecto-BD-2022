@@ -24,7 +24,7 @@ cur.execute("USE medios_de_prensa")
 cur.execute("CREATE TABLE noticias (id INT NOT NULL AUTO_INCREMENT, url TEXT, titulo TEXT, fecha DATE, contenido TEXT, PRIMARY KEY(id))")
 # TABLA MEDIOS DE PRENSA
 cur.execute("CREATE TABLE medios (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(255), url TEXT, region VARCHAR(255), pais VARCHAR(255), fecha DATE, tipo VARCHAR(10), idioma VARCHAR(255), id_noticias INT, FOREIGN KEY (id_noticias) REFERENCES noticias(id), PRIMARY KEY(id))")
-# TABLA DUEÑOS
+# TABLA PROPIETARIO
 cur.execute("CREATE TABLE propietario (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(255), persona VARCHAR(10), PRIMARY KEY(id))")
 # TABLA PERSONAS
 cur.execute("CREATE TABLE personas (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(255), wiki BOOL, profesion VARCHAR(255), nacimiento DATE, nacionalidad VARCHAR(255), popularidad INT(255), PRIMARY KEY(id))")
