@@ -19,7 +19,7 @@ fecha, DATE, "22-06-2022"
 Noticia 
 id_noticia, int, 10
 url, string, "https://www.facebook.com/eltipografo/"
-titulo, string, "
+titulo, string, "Fuertes lluvias en Valdivia"
 fecha, DATE, "22-06-2022"
 contenido, string, "Esta mañana se registraron fuertes lluvias en la XIV Region de los Rios..."
 
