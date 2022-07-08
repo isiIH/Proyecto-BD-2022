@@ -39,22 +39,19 @@ xpath_url="//div[@class='zox-art-title']/a/@href"
 all_urls = response.html.xpath(xpath_url)[0:5]
 
 i = 1
+a = __name__ == "__main__"
+textos = []
 for url in all_urls:
-        print(f"----------\nNoticia {i}:\n----------\n")
-
         #URL
-        print(url)
         response = session.get(url,headers=headers)
 
         #FECHA DE PUBLICACION
         xpath_date="//time/@datetime"
         date = response.html.xpath(xpath_date)[0]
-        print(date)
 
         #TITULO
         xpath_title="//div//h1"
         title = response.html.xpath(xpath_title)[0].text
-        print(title)
 
         #CONTENIDO
         xpath_texto="//div[@class='theiaPostSlider_preloadedSlide']/p"
@@ -69,5 +66,11 @@ for url in all_urls:
                 content = content.strip()
                 texto=texto+" "+content
 
-        print(texto, "\n")
+        if a:
+                print(f"----------\nNoticia {i}:\n----------\n")
+                print(url)
+                print(date)
+                print(title)
+                print(texto, "\n")
+        textos.append(texto)
         i += 1
