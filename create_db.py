@@ -15,7 +15,7 @@ except mariadb.Error as e:
 
 cur = conn.cursor()
 
-cur.execute("DROP DATABASE medios_de_prensa")
+# cur.execute("DROP DATABASE medios_de_prensa")
 query_create = "CREATE DATABASE medios_de_prensa"
 cur.execute(query_create)
 cur.execute("USE medios_de_prensa")

@@ -41,6 +41,8 @@ all_urls = response.html.xpath(xpath_url)[0:5]
 i = 1
 a = __name__ == "__main__"
 textos = []
+noticias = []
+
 for url in all_urls:
         #URL
         response = session.get(url,headers=headers)
@@ -72,5 +74,7 @@ for url in all_urls:
                 print(date)
                 print(title)
                 print(texto, "\n")
+
         textos.append(texto)
+        noticias.append({"url":url, "titulo":title, "fecha":date, "contenido":texto})
         i += 1

@@ -40,34 +40,34 @@ all_urls = response.html.xpath(xpath_url)[0:5]
 
 i = 1
 for url in all_urls:
-    print(f"----------\nNoticia {i}:\n----------\n")
-    
-    #URL
-    print(url)
-    response = session.get(url,headers=headers)
+        print(f"----------\nNoticia {i}:\n----------\n")
 
-    #FECHA DE PUBLICACION
-    xpath_date="//meta[@property='article:published_time']//@content"
-    date = response.html.xpath(xpath_date)[0]
-    print(format_date(date))
+        #URL
+        print(url)
+        response = session.get(url,headers=headers)
 
-    #TITULO
-    xpath_title="//div//h1"
-    title = response.html.xpath(xpath_title)[0].text
-    print(title)
+        #FECHA DE PUBLICACION
+        xpath_date="//meta[@property='article:published_time']//@content"
+        date = response.html.xpath(xpath_date)[0]
+        print(format_date(date))
 
-    #CONTENIDO
-    xpath_texto="//div[@class='content-inner']//p"
-    list_p = response.html.xpath(xpath_texto)
+        #TITULO
+        xpath_title="//div//h1"
+        title = response.html.xpath(xpath_title)[0].text
+        print(title)
 
-    texto=""
-    for p in list_p:
-            content = p.text
-            content = w3lib.html.remove_tags(content)
-            content = w3lib.html.replace_escape_chars(content)
-            content = html.unescape(content)
-            content = content.strip()
-            texto=texto+" "+content
+        #CONTENIDO
+        xpath_texto="//div[@class='content-inner']//p"
+        list_p = response.html.xpath(xpath_texto)
 
-    print(texto, "\n")
-    i += 1
+        texto=""
+        for p in list_p:
+                content = p.text
+                content = w3lib.html.remove_tags(content)
+                content = w3lib.html.replace_escape_chars(content)
+                content = html.unescape(content)
+                content = content.strip()
+                texto=texto+" "+content
+
+        print(texto, "\n")
+        i += 1

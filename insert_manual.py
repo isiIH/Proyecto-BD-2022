@@ -22,10 +22,10 @@ cur.execute("INSERT INTO medios (nombre, url, region, pais, fecha, tipo, idioma)
 cur.execute("INSERT INTO medios (nombre, url, region, pais, fecha, tipo, idioma) VALUES ('LAS ÚLTIMAS NOTICIAS','www.lun.com','OHiggins','Chile',CURDATE(),'local','español')")
 
 #Noticias
-cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido,id_medios) VALUES ('https://www.lipsum.com/', 'Lorem', '2022-06-06', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 2)")
-cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido,id_medios) VALUES ('https://www.google.com/', 'Google', '2022-06-05', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',3)")
-cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido,id_medios) VALUES ('https://www.google.com/hola', 'sdjkahakjsdja', '2022-06-06', 'Excepteur sint occaecat cupidatat non proident, deserunt mollit anim id est laborum',1)")
-cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido,id_medios) VALUES ('https://www.youtube.com/', 'Youtube', '2022-06-02', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',1)")
+cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido, id_medios) VALUES ('https://www.lipsum.com/', 'Lorem', '2022-06-06', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 2)")
+cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido, id_medios) VALUES ('https://www.google.com/', 'Google', '2022-06-05', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',3)")
+cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido, id_medios) VALUES ('https://www.google.com/hola', 'sdjkahakjsdja', '2022-06-06', 'Excepteur sint occaecat cupidatat non proident, deserunt mollit anim id est laborum',1)")
+cur.execute("INSERT INTO noticias (url, titulo, fecha, contenido, id_medios) VALUES ('https://www.youtube.com/', 'Youtube', '2022-06-02', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',1)")
 
 #Propietario
 cur.execute("INSERT INTO propietario (nombre, persona) VALUES ('Luis','Natural')")
